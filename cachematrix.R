@@ -31,3 +31,8 @@ cacheSolve <- function(x, ...) {
         x$setinv(inv)
         inv
 }
+
+## Test
+my_matrix <- matrix(rnorm(4),2,2)
+matrix_obj <- makeCacheMatrix(my_matrix)
+cacheSolve(matrix_obj)
